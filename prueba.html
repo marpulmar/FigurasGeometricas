@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html><head><meta charset="utf-8">
+    <script src="FigurasGeometricas.js"></script>
+<script src="https://educacionadistancia.juntadeandalucia.es/centros/sevilla/pluginfile.php/1164056/mod_folder/content/0/clases.js"></script>
+<script src="https://educacionadistancia.juntadeandalucia.es/centros/sevilla/pluginfile.php/1164056/mod_folder/content/0/prueba.js"></script>
+<style>
+    table, th, td {
+  border: 1px solid black;
+}
+</style>
+</head>
+<body onload="compruebaClases()">
+<table>
+    <caption>Figura geométrica</caption>
+    <tr><th>Prueba</th><th>Resultado esperado</th><th>Resultado obtenido</th></tr>
+    <tr>
+        <td>FG01:Constructor</td>
+        <td>Correcto</td>
+        <td id="FG01"></td>
+    </tr>
+    <tr>
+        <td>FG02:Creación de nombre</td>
+        <td>Figura Geométrica</td>
+        <td id="FG02"></td>
+    </tr>
+    <tr>
+        <td>FG03:Creación de dato1</td>
+        <td>5</td>
+        <td id="FG03"></td>
+    </tr>
+    <tr>
+        <td>FG04:Método toString()</td>
+        <td>Figura Geométrica</td>
+        <td id="FG04"></td>
+    </tr>
+</table>
+<br>
+
+<table>
+    <caption>Polígono regular</caption>
+    <tr><th>Prueba</th><th>Resultado esperado</th><th>Resultado obtenido</th></tr>
+    <tr>
+        <td>PR01:Constructor</td>
+        <td>Correcto</td>
+        <td id="PR01"></td>
+    </tr>
+    <tr>
+        <td>PR02:Creación de nombre</td>
+        <td>Triángulo</td>
+        <td id="PR02"></td>
+    </tr>
+    <tr>
+        <td>PR03:Creación de nombre</td>
+        <td>Cuadrado</td>
+        <td id="PR03"></td>
+    </tr>
+    <tr>
+        <td>PR04:Creación de nombre</td>
+        <td>Pentágono</td>
+        <td id="PR04"></td>
+    </tr>
+    <tr>
+        <td>PR05:Creación de nombre</td>
+        <td>Hexágono</td>
+        <td id="PR05"></td>
+    </tr>
+    <tr>
+        <td>PR06:Creación de nombre</td>
+        <td>Polígono</td>
+        <td id="PR06"></td>
+    </tr>
+    <tr>
+        <td>PR07:Creación de dato1</td>
+        <td>5</td>
+        <td id="PR07"></td>
+    </tr>
+    <tr>
+        <td>PR08:Creación de numLados</td>
+        <td>13</td>
+        <td id="PR08"></td>
+    </tr>
+    <tr>
+        <td>PR09:Método toString()</td>
+        <td>Hexágono regular</td>
+        <td id="PR09"></td>
+    </tr>
+    <tr>
+        <td>PR10:Método toString()</td>
+        <td>Polígono regular de 13 lados</td>
+        <td id="PR10"></td>
+    </tr>
+    <tr>
+        <td>PR11:Método calcularPerimetro()</td>
+        <td>65</td>
+        <td id="PR11"></td>
+    </tr>
+    <tr>
+        <td>PR12:Método calcularArea()</td>
+        <td>80.10530548539269</td>
+        <td id="PR12"></td>
+    </tr>
+    <tr>
+        <td>PR13:Método calcularApotema()</td>
+        <td>2.464778630319775</td>
+        <td id="PR13"></td>
+    </tr>
+</table>
+
+<br>
+
+<table>
+    <caption>Triángulo</caption>
+    <tr><th>Prueba</th><th>Resultado esperado</th><th>Resultado obtenido</th></tr>
+    <tr>
+        <td>T01:Constructor</td>
+        <td>Correcto</td>
+        <td id="T01"></td>
+    </tr>
+    <tr>
+        <td>T02:Creación de nombre</td>
+        <td>Triángulo</td>
+        <td id="T02"></td>
+    </tr>
+    <tr>
+        <td>T03:Creación de dato1</td>
+        <td>5</td>
+        <td id="T03"></td>
+    </tr>
+    <tr>
+        <td>T04:Creación de dato2</td>
+        <td>4</td>
+        <td id="T04"></td>
+    </tr>
+    <tr>
+        <td>T05:Creación de dato3</td>
+        <td>7</td>
+        <td id="T05"></td>
+    </tr>
+    <tr>
+        <td>T06:Método toString()</td>
+        <td>Triángulo de lados 5, 4 y 7</td>
+        <td id="T06"></td>
+    </tr>
+    <tr>
+        <td>T07:Método calcularPerimetro()</td>
+        <td>16</td>
+        <td id="T07"></td>
+    </tr>
+    <tr>
+        <td>T08:Método calculaArea()</td>
+        <td>9.797958971132712</td>
+        <td id="T08"></td>
+    </tr>
+</table>
+
+<br>
+
+<table>
+    <caption>Círculo</caption>
+    <tr><th>Prueba</th><th>Resultado esperado</th><th>Resultado obtenido</th></tr>
+    <tr>
+        <td>C01:Constructor</td>
+        <td>Correcto</td>
+        <td id="C01"></td>
+    </tr>
+    <tr>
+        <td>C02:Creación de nombre</td>
+        <td>Círculo</td>
+        <td id="C02"></td>
+    </tr>
+    <tr>
+        <td>C03:Creación de dato1</td>
+        <td>5</td>
+        <td id="C03"></td>
+    </tr>
+    <tr>
+        <td>C04:Método toString()</td>
+        <td>Círculo de radio 7</td>
+        <td id="C04"></td>
+    </tr>
+    <tr>
+        <td>C05:Método calcularPerimetro()</td>
+        <td>43.982297150257104</td>
+        <td id="C05"></td>
+    </tr>
+    <tr>
+        <td>C06:Método calculaArea()</td>
+        <td>153.93804002589985</td>
+        <td id="C06"></td>
+    </tr>
+</table>
+
+<br>
+
+<table>
+    <caption>Triángulo Equilátero</caption>
+    <tr><th>Prueba</th><th>Resultado esperado</th><th>Resultado obtenido</th></tr>
+    <tr>
+        <td>TE01:Constructor</td>
+        <td>Correcto</td>
+        <td id="TE01"></td>
+    </tr>
+    <tr>
+        <td>TE02:Creación de nombre</td>
+        <td>Triángulo</td>
+        <td id="TE02"></td>
+    </tr>
+    <tr>
+        <td>TE03:Creación de dato1</td>
+        <td>6</td>
+        <td id="TE03"></td>
+    </tr>
+    <tr>
+        <td>TE04:Creación de dato2</td>
+        <td>6</td>
+        <td id="TE04"></td>
+    </tr>
+    <tr>
+        <td>TE05:Creación de dato3</td>
+        <td>6</td>
+        <td id="TE05"></td>
+    </tr>
+    <tr>
+        <td>TE06:Método toString()</td>
+        <td>Triángulo equilátero de lado 6</td>
+        <td id="TE06"></td>
+    </tr>
+    <tr>
+        <td>TE07:Método calcularPerimetro()</td>
+        <td>18</td>
+        <td id="TE07"></td>
+    </tr>
+    <tr>
+        <td>TE08:Método calculaArea()</td>
+        <td>15.588457268119896</td>
+        <td id="TE08"></td>
+    </tr>
+</table>
+
+<br>
+
+<table>
+    <caption>Rectángulo</caption>
+    <tr><th>Prueba</th><th>Resultado esperado</th><th>Resultado obtenido</th></tr>
+    <tr>
+        <td>R01:Constructor</td>
+        <td>Correcto</td>
+        <td id="R01"></td>
+    </tr>
+    <tr>
+        <td>R02:Creación de nombre</td>
+        <td>Rectángulo</td>
+        <td id="R02"></td>
+    </tr>
+    <tr>
+        <td>R03:Creación de dato1</td>
+        <td>6</td>
+        <td id="R03"></td>
+    </tr>
+    <tr>
+        <td>R04:Creación de dato2</td>
+        <td>8</td>
+        <td id="R04"></td>
+    </tr>
+    <tr>
+        <td>R05:Método toString()</td>
+        <td>Rectángulo de lados 6 y 8</td>
+        <td id="R05"></td>
+    </tr>
+    <tr>
+        <td>TE06:Método calcularPerimetro()</td>
+        <td>28</td>
+        <td id="R06"></td>
+    </tr>
+    <tr>
+        <td>R07:Método calculaArea()</td>
+        <td>48</td>
+        <td id="R07"></td>
+    </tr>
+</table>
+
+</body>
+</html>
